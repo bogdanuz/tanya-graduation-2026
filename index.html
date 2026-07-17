@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Прощальный лендинг для Татьяны Шатуновой — выпуск спецкачей 2026">
+  <meta name="theme-color" content="#142444">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="ru_RU">
+  <meta property="og:title" content="Выпуск 2026 — Татьяна Шатунова">
+  <meta property="og:description" content="Спасибо за сводные, Таня! С любовью, спецкачи.">
+  <meta property="og:image" content="assets/images/tanya-graduation-poster.webp">
+  <meta name="twitter:card" content="summary_large_image">
+  <title>Выпуск Авито 2026 — Татьяна Шатунова</title>
+  <link rel="preload" as="font" href="assets/fonts/manrope-cyrillic.woff2" type="font/woff2" crossorigin>
+  <link rel="preload" as="font" href="assets/fonts/unbounded-cyrillic.woff2" type="font/woff2" crossorigin>
+  <link rel="preload" as="image" href="assets/images/paxta-ornament3.webp" type="image/webp" fetchpriority="high">
+  <script>
+    document.documentElement.classList.add("js");
+    if ("scrollRestoration" in history) history.scrollRestoration = "manual";
+    window.scrollTo(0, 0);
+  </script>
+  <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <noscript>
+    <p class="noscript-note">Для анимаций нужен JavaScript, но основное содержимое доступно ниже.</p>
+  </noscript>
+
+  <div class="preloader" id="preloader" role="status" aria-live="polite">
+    <div class="preloader__mark" aria-hidden="true">
+      <img src="assets/images/paxta-ornament1.webp" alt="" width="120" height="120" decoding="async">
+    </div>
+    <p class="preloader__text">Готовим выпускной…</p>
+    <div class="preloader__progress" aria-hidden="true"></div>
+  </div>
+
+  <div class="page-glow" aria-hidden="true"></div>
+  <div class="page-pattern" aria-hidden="true"></div>
+
+  <main id="main" class="is-loading">
+    <!-- 1. Hero -->
+    <section class="hero" id="block-1">
+      <div class="hero__ornament" aria-hidden="true">
+        <div class="mandala-wrapper" id="mandala">
+          <div class="mandala-layer layer-outer">
+            <img src="assets/images/paxta-ornament3.webp" alt="" width="560" height="560" loading="eager" fetchpriority="high" decoding="async" draggable="false" onerror="this.parentElement.classList.add('is-failed')">
+          </div>
+          <div class="mandala-layer layer-middle">
+            <img src="assets/images/paxta-ornament2.webp" alt="" width="560" height="560" loading="eager" decoding="async" draggable="false" onerror="this.parentElement.classList.add('is-failed')">
+          </div>
+          <div class="mandala-layer layer-center">
+            <img src="assets/images/paxta-ornament1.webp" alt="" width="560" height="560" loading="eager" decoding="async" draggable="false" onerror="this.parentElement.classList.add('is-failed')">
+          </div>
+        </div>
+      </div>
+      <div class="hero__light" aria-hidden="true"></div>
+      <div class="hero__content">
+        <p class="hero__eyebrow">Спецкачи</p>
+        <h1 class="hero__title">Выпуск Авито<br>2026</h1>
+        <p class="hero__subtitle">Татьяна Шатунова</p>
+        <div class="hero__line" aria-hidden="true"></div>
+      </div>
+      <button class="scroll-hint" id="start-ambiance" type="button">
+        <span class="scroll-hint__pulse" aria-hidden="true"></span>
+        <span class="scroll-hint__label">Начать выпускной</span>
+      </button>
+    </section>
+
+    <!-- 2. Growth chart — scroll-scrubbed -->
+    <section class="chart-pin" id="block-2">
+      <div class="chart-pin__sticky">
+        <div class="chart-stage">
+          <header class="chart-stage__head">
+            <p class="eyebrow">Путь</p>
+            <h2 class="section-title">График роста Тани</h2>
+          </header>
+
+          <div class="growth" id="growth">
+            <div class="growth__meta">
+              <div class="growth__stat">
+                <span class="growth__stat-value" id="growth-year">2018</span>
+                <span class="growth__stat-label">год</span>
+              </div>
+              <div class="growth__progress-wrap">
+                <div class="growth__progress" id="growth-progress"></div>
+              </div>
+              <div class="growth__scrub" id="growth-scrub" aria-hidden="true">
+                <span class="growth__dot is-active" data-year="2018"></span>
+                <span class="growth__dot" data-year="2020"></span>
+                <span class="growth__dot" data-year="2022"></span>
+                <span class="growth__dot" data-year="2024"></span>
+                <span class="growth__dot" data-year="2026"></span>
+              </div>
+              <p class="growth__caption">От первых задач до выпуска 2026.</p>
+            </div>
+
+            <div class="growth__visual">
+              <svg class="growth__svg" viewBox="0 0 720 380" preserveAspectRatio="xMidYMid meet" aria-hidden="true">
+                <defs>
+                  <linearGradient id="barGrad" x1="0" y1="1" x2="0" y2="0">
+                    <stop offset="0%" stop-color="#ebdbbb" stop-opacity="0.45"/>
+                    <stop offset="100%" stop-color="#ebdbbb"/>
+                  </linearGradient>
+                  <linearGradient id="arrowGrad" x1="0%" y1="100%" x2="100%" y2="0%">
+                    <stop offset="0%" stop-color="#0b1425"/>
+                    <stop offset="100%" stop-color="#293855"/>
+                  </linearGradient>
+                </defs>
+
+                <!-- grid -->
+                <g class="growth__grid" stroke="#bfc3cc" stroke-width="1">
+                  <line x1="48" y1="320" x2="680" y2="320"/>
+                  <line x1="48" y1="250" x2="680" y2="250" stroke-dasharray="4 6"/>
+                  <line x1="48" y1="180" x2="680" y2="180" stroke-dasharray="4 6"/>
+                  <line x1="48" y1="110" x2="680" y2="110" stroke-dasharray="4 6"/>
+                  <line x1="48" y1="40" x2="680" y2="40" stroke-dasharray="4 6"/>
+                </g>
+
+                <!-- bars -->
+                <g class="growth__bars" id="growth-bars">
+                  <rect class="bar" data-h="70" x="90" y="320" width="56" height="0" rx="6" fill="#d4d7dd"/>
+                  <rect class="bar" data-h="110" x="210" y="320" width="56" height="0" rx="6" fill="#aaafbb"/>
+                  <rect class="bar" data-h="160" x="330" y="320" width="56" height="0" rx="6" fill="#697488"/>
+                  <rect class="bar" data-h="210" x="450" y="320" width="56" height="0" rx="6" fill="#3f4c66"/>
+                  <rect class="bar bar--accent" data-h="270" x="570" y="320" width="56" height="0" rx="6" fill="url(#barGrad)"/>
+                </g>
+
+                <!-- labels under bars -->
+                <g class="growth__bar-labels" fill="#697488" font-family="Manrope,sans-serif" font-size="13" text-anchor="middle">
+                  <text x="118" y="348">2018</text>
+                  <text x="238" y="348">2020</text>
+                  <text x="358" y="348">2022</text>
+                  <text x="478" y="348">2024</text>
+                  <text x="598" y="348" fill="#142444" font-weight="700">2026</text>
+                </g>
+
+                <!-- growth arrow path -->
+                <path id="growth-path"
+                  d="M 80 300 Q 160 285 200 260 Q 270 220 310 230 Q 380 250 420 180 Q 470 100 520 120 Q 580 145 640 55"
+                  fill="none" stroke="url(#arrowGrad)" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"
+                  pathLength="100"
+                  stroke-dasharray="100"
+                  stroke-dashoffset="100"/>
+
+                <polygon id="growth-head" points="0,0 -16,7 -16,-7" fill="#142444" opacity="0"/>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. Summary table -->
+    <section class="summary-section" id="block-3">
+      <div class="summary-section__inner">
+        <header class="summary-section__head">
+          <p class="eyebrow">Дашборд</p>
+          <h2 class="section-title">Давайте сводную накинем!</h2>
+        </header>
+
+        <table class="dash" id="summary-dash">
+          <caption class="visually-hidden">Сводная по Тане</caption>
+          <thead>
+            <tr class="dash__row dash__row--head">
+              <th class="dash__cell" scope="col">Метрика</th>
+              <th class="dash__cell dash__cell--num" scope="col">Значение</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="dash__row">
+              <td class="dash__cell"><span class="dash__index">01</span><span class="dash__label">Количество<br>сводных таблиц</span></td>
+              <td class="dash__cell dash__cell--num"><span class="counter" data-target="765429">765&nbsp;429</span></td>
+            </tr>
+            <tr class="dash__row">
+              <td class="dash__cell"><span class="dash__index">02</span><span class="dash__label">Количество<br>регулярных выражений</span></td>
+              <td class="dash__cell dash__cell--num"><span class="counter" data-target="1764">1&nbsp;764</span></td>
+            </tr>
+            <tr class="dash__row">
+              <td class="dash__cell"><span class="dash__index">03</span><span class="dash__label">Заблокировано<br>ношенных трусов</span></td>
+              <td class="dash__cell dash__cell--num"><span class="counter" data-target="87461">87&nbsp;461</span></td>
+            </tr>
+            <tr class="dash__row">
+              <td class="dash__cell"><span class="dash__index">04</span><span class="dash__label">Количество<br>обработанных апелляций</span></td>
+              <td class="dash__cell dash__cell--num"><span class="counter" data-target="100500">100&nbsp;500</span></td>
+            </tr>
+            <tr class="dash__row dash__row--special">
+              <td class="dash__cell"><span class="dash__index">05</span><span class="dash__label">Количество<br>приятных моментов вместе</span></td>
+              <td class="dash__cell dash__cell--num"><span class="infinity-symbol">∞</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- 4. Finale -->
+    <section class="finale" id="block-4">
+      <canvas class="confetti-canvas" id="confetti-canvas" aria-hidden="true"></canvas>
+      <div class="finale__glow" aria-hidden="true"></div>
+      <div class="finale__inner">
+        <h2 class="finale__title">Диплом вручён</h2>
+        <figure class="finale__frame">
+          <video
+            class="finale__video"
+            id="finale-video"
+            src="assets/images/tanya-graduation.mp4"
+            poster="assets/images/tanya-graduation-poster.webp"
+            muted
+            loop
+            playsinline
+            disablepictureinpicture
+            disableremoteplayback
+            controlslist="nodownload nofullscreen noremoteplayback"
+            preload="none"
+            aria-label="Татьяна Шатунова в мантии с дипломом"
+          ></video>
+        </figure>
+        <div class="finale__actions" id="finale-actions">
+          <a class="btn btn--primary" href="assets/images/tanya-graduation.png" download="tanya-graduation.png">
+            Скачать фото на память
+          </a>
+          <button class="btn btn--secondary" id="share-btn" type="button">
+            Поделиться
+          </button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p><span>Спасибо за сводные, Таня! С любовью, спецкачи <span class="footer__heart" aria-hidden="true">♥</span></span><span class="footer__year">2026</span></p>
+  </footer>
+
+  <!-- Peers -->
+  <div class="peers" id="peers">
+    <div class="peer" data-peer="1" data-side="left">
+      <img class="peer__img" src="assets/images/colleague-1.webp" alt="" width="800" height="1000" loading="lazy" decoding="async" draggable="false">
+      <p class="peer__toast">Avito Global теперь в надёжных руках!</p>
+    </div>
+    <div class="peer" data-peer="2" data-side="right">
+      <img class="peer__img" src="assets/images/colleague-2.webp" alt="" width="800" height="1000" loading="lazy" decoding="async" draggable="false">
+      <p class="peer__toast">Лучшая! Без сомнений!</p>
+    </div>
+    <div class="peer" data-peer="3" data-side="left">
+      <img class="peer__img" src="assets/images/colleague-3.webp" alt="" width="800" height="1000" loading="lazy" decoding="async" draggable="false">
+      <p class="peer__toast">Мы тебя не отпускаем, просто временно прощаемся ❤️</p>
+    </div>
+    <div class="peer" data-peer="4" data-side="right">
+      <img class="peer__img" src="assets/images/colleague-4.webp" alt="" width="800" height="1000" loading="lazy" decoding="async" draggable="false">
+      <p class="peer__toast">Проанализируй им всё!</p>
+    </div>
+    <div class="peer" data-peer="5" data-side="left">
+      <img class="peer__img" src="assets/images/colleague-5.webp" alt="" width="800" height="1000" loading="lazy" decoding="async" draggable="false">
+      <p class="peer__toast">Спецкачи форева!</p>
+    </div>
+  </div>
+
+  <button class="fab fab--mute is-muted" id="mute-btn" type="button" aria-label="Включить звук" title="Звук выкл" aria-pressed="true">
+    <svg class="icon-on" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="currentColor" d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg>
+    <svg class="icon-off" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="currentColor" d="M16.5 12c0-1.77-1.02-3.29-2.5-4.03v2.21l2.45 2.45c.03-.2.05-.41.05-.63zm2.5 0c0 .94-.2 1.82-.54 2.64l1.51 1.51C20.63 14.91 21 13.5 21 12c0-4.28-2.99-7.86-7-8.77v2.06c2.89.86 5 3.54 5 6.71zM4.27 3L3 4.27 7.73 9H3v6h4l5 5v-6.73l4.25 4.25c-.67.52-1.42.93-2.25 1.18v2.06c1.38-.31 2.63-.95 3.69-1.81L19.73 21 21 19.73l-9-9L4.27 3zM12 4L9.91 6.09 12 8.18V4z"/></svg>
+  </button>
+
+  <button class="fab fab--top" id="top-btn" type="button" aria-label="Наверх" hidden>
+    <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="currentColor" d="M7.41 15.41 12 10.83l4.59 4.58L18 14l-6-6-6 6z"/></svg>
+  </button>
+
+  <audio id="bg-audio" src="assets/audio/vypusknoj.mp3" loop preload="none" playsinline></audio>
+
+  <script defer src="js/script.js"></script>
+</body>
+</html>
