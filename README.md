@@ -25,6 +25,7 @@ npx --yes serve .
 |------|------|
 | Коллеги (WebP с альфа-каналом, 800×1000) | `assets/images/colleague-1.webp` … `colleague-5.webp` |
 | Орнаменты hero (WebP, 560×560) | `assets/images/paxta-ornament1.webp` … `paxta-ornament3.webp` |
+| Превью для шаринга | `assets/images/og-preview.webp` (источник: `og-preview.png`) |
 | Финальное видео (оптимизированное 720p) | `assets/images/tanya-graduation.mp4` |
 | Лёгкий постер видео | `assets/images/tanya-graduation-poster.webp` |
 | Оригинальное фото для скачивания | `assets/images/tanya-graduation.png` |
